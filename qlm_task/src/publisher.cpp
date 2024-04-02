@@ -1,14 +1,10 @@
 #include <chrono>
 #include <memory>
 #include <cstdlib>
-
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-
 #include "std_msgs/msg/float64.hpp" 
-
 using namespace std::chrono_literals;
-
 
 class Publisher_test : public rclcpp::Node
 {
@@ -21,7 +17,6 @@ public:
     timer_ = this->create_wall_timer(
       1500ms, std::bind(&Publisher_test::timer_callback, this));
   }
-
 private:
   void timer_callback()
   {
