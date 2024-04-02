@@ -29,7 +29,8 @@ ros2 run qlm_task talker
 
 This node will log the input datas and the result of the division.
 If an error occured or the buffer resets, it will be also noted.
-```. install/setup.bash
+```
+. install/setup.bash
 ros2 run qlm_task listener
 ```
 **Third** terminal: 'division_result topic'
